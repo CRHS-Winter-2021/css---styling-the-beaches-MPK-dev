@@ -4,13 +4,61 @@
 		<!--Template for CSS Project	
 			March 2020
 			Based upon: https://www.tourismpei.com/  -->
-			
+			<!--Keshav King April 12 2021-->
+
+      	<meta charset="UTF-8">
+		<meta name="description" content="Debugging assignment">
+		<meta name="keywords" content="CMP621A, CSS, Introduction to CSS">
+		<meta name="author" content="Mr. Pauls">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+body {background-color: coral;}
+
+.header{text-align:center;
+       background-color:cyan;
+       font-family: "Helvetica", Verdana}
+
+.links{
+        background-color: rgb(194, 245, 66);
+        font-family: "Helvetica", Verdana;
+        width: 200px;
+        height: 200px;
+        float: left;
+        }
+
+a:link{ color:blue}
+a:visited{ color:red;}
+a:hover{background-color:rgb(66, 164, 245);}
+a:active{background-color: rgb(105, 245, 66);}
+a:focus{background-color:rgb(245, 236, 66);}
+
+.center_column{
+  width:500px;
+  height: 700px;
+  float: left;
+  overflow: auto;
+
+}
+
+.right_column{
+
+  width: 200px;
+  height: 400px;
+  float: right;
+  overflow: auto;
+}
+
+.bottom{ clear: both;
+
+}
+    </style>
 				
 		<title>My Favourite Beaches</title>
 	</head>
 
 	<body>
-		<p >
+		<div>
 				<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> Festivals and Events </a>
 				<a href="https://www.tourismpei.com/about-pei" target="_blank"> About PEI </a>
 				Planning a Trip:  <!-- make into a drop down -->
@@ -18,28 +66,28 @@
 					<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
 					<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
 			
-		</p>  <!-- end of navigation bar -->
+		</div>  <!-- end of navigation bar -->
 		
 		
-		<p>
+	<div class="header">	<h2>
 			My Favourite Beaches
 			
-		</p>  <!-- end of header --> 
+		</h2> </div>  <!-- end of header --> 
 		
-		
-		<p >
-			LINKS <br>  
+		<div class= "links">
+		<ul> 
 			<!-- Make Links into an unordered list -->
-			<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a>
-			<a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a>
-			<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a>
-			<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a>
-			<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a>
+		<li>	<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> 10 Quirky Things You Didn’t Know About PEI </a> </li>
+		<li>	<a href="https://www.tourismpei.com/about-pei" target="_blank">Environment</a></li>
+		<li>	<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Getting Here</a> </li>
+		<li>	<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Important Travel Information</a> </li>
+		 <li> <a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">Island Webcams</a> </li>
 			
-		</p> <!-- end of left column -->
-		
-		
-		<p >
+		</ul> <!-- end of left column -->
+		</div>
+
+		<div class= "center_column">
+		<p>
 			<img src="Media/beach1.jpg" alt="Beautiful beach" width = "200px"> 
 			
 			ABOUT OUR BEACHES <br>
@@ -69,8 +117,9 @@
 			Others dream of returning. "PEI is the most beautiful, clean province we have seen, and the beaches are something us in Alberta only see in pictures," says Lori from Edmonton. Lori says she'll return for another PEI vacation soon. Such is the draw of PEI's beautiful beaches. And one thing is certain - she won't be alone.
 			
 		</p> <!-- end of center column -->
-		
-		
+		</div>
+
+		<div class= "right_column">
 		<p >
 			On our Island province you are never far from the ocean and one of our numerous spectacular beaches. From the red sand beaches on the south shore to the white sand beaches on the north shore, Prince Edward Island offers a variety of unique and enjoyable beach experiences
 			<img src="Media/riptide.jpg" width = "200px" alt ="Riptide Info">
@@ -80,13 +129,14 @@
 			
 			
 		</p> <!-- end of right column -->
-		
-				
+		</div>
+
+    <div class="bottom">
 		<p >
 		   <a href="https://www.tourismpei.com/contact-us-page" target = "_blank" >Contact Us </a> 	
 		   2020 Prince Edward Island Tourism. All Rights Reserved.
 		</p> <!-- end of footer -->
-				
+				</div>
 	</body>
 
 
