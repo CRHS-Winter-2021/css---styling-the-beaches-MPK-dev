@@ -18,12 +18,75 @@ body {background-color: coral;}
 .header{text-align:center;
        background-color:cyan;
        font-family: "Helvetica", Verdana}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .links{
         background-color: rgb(194, 245, 66);
         font-family: "Helvetica", Verdana;
         width: 200px;
-        height: 200px;
+        height: 700px;
         float: left;
         }
 
@@ -34,22 +97,32 @@ a:active{background-color: rgb(105, 245, 66);}
 a:focus{background-color:rgb(245, 236, 66);}
 
 .center_column{
-  width:500px;
+  width:400px;
   height: 700px;
-  float: left;
   overflow: auto;
+  background-color:blue;
 
 }
 
+.picture{
+  width: 100%;
+  border: 10px solid black;
+}
+
+.mid-colmun{
+  float:left;
+}
 .right_column{
 
   width: 200px;
-  height: 400px;
+  height: 700px;
   float: right;
   overflow: auto;
+  background-color:magenta;
 }
 
 .bottom{ clear: both;
+         background-color: gray;
 
 }
     </style>
@@ -58,15 +131,21 @@ a:focus{background-color:rgb(245, 236, 66);}
 	</head>
 
 	<body>
-		<div>
+        <div class="navbar">
 				<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> Festivals and Events </a>
 				<a href="https://www.tourismpei.com/about-pei" target="_blank"> About PEI </a>
-				Planning a Trip:  <!-- make into a drop down -->
+        <div class= "dropdown">
+          <button class="dropbutton">Planning a Trip
+            <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content"
+ <!-- make into a drop down -->
 					<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
 					<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
 					<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
-			
-		</div>  <!-- end of navigation bar -->
+			</div>
+		</div>
+    <div>  <!-- end of navigation bar -->
 		
 		
 	<div class="header">	<h2>
@@ -86,9 +165,15 @@ a:focus{background-color:rgb(245, 236, 66);}
 		</ul> <!-- end of left column -->
 		</div>
 
+<div class= "mid-column">
+    <div class="picture">
+      <img src="Media/beach1.jpg" alt="Beautiful beach" width = "500px"
+      height:"320px"> 
+      </div>
+
 		<div class= "center_column">
 		<p>
-			<img src="Media/beach1.jpg" alt="Beautiful beach" width = "200px"> 
+			
 			
 			ABOUT OUR BEACHES <br>
 			With beaches that sing and others that stun visitors with their pristine blend of rustic solitude and splendid red sand, Prince Edward Island's sandy expanses continue to receive raves from all over the world, including a nomination as one of Canada's natural wonders.
@@ -118,6 +203,7 @@ a:focus{background-color:rgb(245, 236, 66);}
 			
 		</p> <!-- end of center column -->
 		</div>
+    </div>
 
 		<div class= "right_column">
 		<p >
