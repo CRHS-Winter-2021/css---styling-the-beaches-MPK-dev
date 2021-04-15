@@ -11,141 +11,28 @@
 		<meta name="keywords" content="CMP621A, CSS, Introduction to CSS">
 		<meta name="author" content="Mr. Pauls">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-body {background-color: coral;}
-
-.header{text-align:center;
-       background-color:cyan;
-       font-family: "Helvetica", Verdana}
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: blue;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.links{
-        background-color: rgb(194, 245, 66);
-        font-family: "Helvetica", Verdana;
-        width: 200px;
-        height: 700px;
-        float: left;
-        }
-
-a:link{ color:blue}
-a:visited{ color:red;}
-a:hover{background-color:rgb(66, 164, 245);}
-a:active{background-color: rgb(105, 245, 66);}
-a:focus{background-color:rgb(245, 236, 66);}
-
-.center_column{
-  width:400px;
-  height: 700px;
-  overflow: auto;
-  background-color:blue;
-
-}
-
-.picture{
-  width: 100%;
-  border: 10px solid black;
-}
-
-.mid-colmun{
-  float:left;
-}
-.right_column{
-
-  width: 200px;
-  height: 700px;
-  float: right;
-  overflow: auto;
-  background-color:magenta;
-}
-
-.bottom{ clear: both;
-         background-color: gray;
-
-}
-    </style>
 				
 		<title>My Favourite Beaches</title>
+    <link href="StyleSheet.css" rel="stylesheet">
 	</head>
 
 	<body>
-        <div class="navbar">
+		<div class="navbar">
 				<a href="https://www.tourismpei.com/pei-festivals-and-events" target="_blank"> Festivals and Events </a>
 				<a href="https://www.tourismpei.com/about-pei" target="_blank"> About PEI </a>
-        <div class= "dropdown">
-          <button class="dropbutton">Planning a Trip
+        <div class="dropdown">
+          <button class="dropbtn">	Planning a Trip
             <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content"
- <!-- make into a drop down -->
+          </button>
+          <div class="dropdown-content">
+			  <!-- make into a drop down -->
 					<a href="https://www.tourismpei.com/pei-package-offers" target="_blank">Vacation Packages</a>
 					<a href="https://www.tourismpei.com/pei-accommodations" target="_blank">Where to Stay</a>
 					<a href="https://www.tourismpei.com/pei-things-to-do" target="_blank">What to do</a>
-			</div>
-		</div>
-    <div>  <!-- end of navigation bar -->
+			
+		</div> 
+    </div> 
+    </div> <!-- end of navigation bar -->
 		
 		
 	<div class="header">	<h2>
@@ -170,8 +57,6 @@ a:focus{background-color:rgb(245, 236, 66);}
       <img src="Media/beach1.jpg" alt="Beautiful beach" width = "500px"
       height:"320px"> 
       </div>
-
-		<div class= "center_column">
 		<p>
 			
 			
@@ -203,15 +88,25 @@ a:focus{background-color:rgb(245, 236, 66);}
 			
 		</p> <!-- end of center column -->
 		</div>
-    </div>
 
 		<div class= "right_column">
 		<p >
-			On our Island province you are never far from the ocean and one of our numerous spectacular beaches. From the red sand beaches on the south shore to the white sand beaches on the north shore, Prince Edward Island offers a variety of unique and enjoyable beach experiences
+			On our Island province you are never far from the ocean and one of our numerous spectacular beaches. From the red sand beaches on the south shore to the white sand beaches on the north shore, Prince Edward Island offers a variety of unique and enjoyable beach experiences.
+      <br>
+      <br>
 			<img src="Media/riptide.jpg" width = "200px" alt ="Riptide Info">
 			<br>
+      <br>
 			Swimming in the ocean is very different from swimming in a pool or lake. The strength and force of even small ocean waves can surprise beach goers who are unfamiliar with the power of the sea. When particular surf conditions are present at some of our beaches, rip currents can occur.
-			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices interdum metus id ultrices. Vivamus vel dictum neque, vel euismod libero. Mauris dapibus consectetur dolor, non pulvinar urna molestie ac. Pellentesque sodales ac ex non varius. Aenean sollicitudin ante magna, nec porttitor ante aliquam eget. Curabitur tempor enim turpis, id posuere ex porttitor ut. Nullam ornare varius ligula ac imperdiet. Morbi ut diam maximus, convallis nisl vehicula, laoreet neque. Donec porttitor mattis libero, at vehicula tellus convallis id. Nunc lectus eros, convallis eget mauris eget, ullamcorper auctor nisi. Curabitur tempor posuere leo.
+
+Praesent vehicula lectus ac lobortis tempus. Nullam eleifend sollicitudin elit. In hac habitasse platea dictumst. Vivamus in enim ac lorem vehicula dapibus id sit amet risus. Sed ullamcorper vehicula nisl, sit amet laoreet quam ultrices rutrum. Donec nec nulla luctus, ultricies ligula id, elementum est. Ut finibus neque a aliquet luctus. Fusce eget felis orci. Pellentesque interdum ex turpis, eget consequat nibh euismod et.
+
+Praesent id fermentum lorem. Aliquam vestibulum accumsan semper. Vestibulum rutrum aliquam iaculis. Proin efficitur in metus at blandit. Curabitur dapibus lobortis erat eget facilisis. Ut vitae nisi elit. Aenean congue erat odio. Donec et luctus odio. Suspendisse elementum imperdiet suscipit.
+
+Vestibulum varius eros ac urna bibendum, eget eleifend velit sagittis. Mauris id lacus at ipsum efficitur tincidunt ut ac nisi. Donec eget viverra sem. Donec sodales neque dolor, quis tincidunt dolor lobortis a. Mauris euismod blandit turpis, at elementum felis auctor in. Aliquam faucibus ligula eget velit semper fermentum. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Morbi sem lorem, varius et rutrum non, laoreet vitae risus. Quisque tempus iaculis egestas. Sed eros diam, dignissim vel ipsum a, lacinia efficitur velit. Sed fermentum in eros ac consequat. Morbi arcu felis, commodo vitae ultrices ut, lobortis rutrum velit.
+
+Maecenas facilisis justo lacus, et commodo diam pretium a. Pellentesque nec tempor nisl. Sed pharetra blandit luctus. Proin dictum nibh ac sagittis dignissim. Nam varius tincidunt odio id malesuada. Morbi eleifend non sem sit amet gravida. Suspendisse in pharetra enim. Sed at dui vel est posuere vulputate et sit amet elit. Morbi commodo facilisis velit, a laoreet libero. Maecenas ullamcorper laoreet tristique. Duis non dolor nec dolor iaculis volutpat. Proin commodo, lacus in pharetra tempor, mauris enim tempus nisi, id molestie lorem arcu ac dui. Nullam sit amet orci nisl. Maecenas euismod sagittis dui in convallis. Curabitur nulla odio, maximus non mi eget, iaculis imperdiet felis.
 			
 			
 		</p> <!-- end of right column -->
@@ -224,6 +119,4 @@ a:focus{background-color:rgb(245, 236, 66);}
 		</p> <!-- end of footer -->
 				</div>
 	</body>
-
-
 </html>
